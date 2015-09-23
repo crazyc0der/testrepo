@@ -1,0 +1,53 @@
+<p>Работа с feature</p>
+
+<ul>
+	<li>
+		<p>Начало разработки фичи:</p>
+		<p>git flow feature start MYFEATURE</p>
+		<p>Cоздаёт новую ветку фичи, основанную на ветке "develop", и переключается на неё.</p>
+	</li>
+	<li>
+		<p>Завершение фичи:</p>
+		<p>git flow feature finish MYFEATURE</p>
+		<p>Cоздаёт новую ветку фичи, основанную на ветке "develop", и переключается на неё.</p>
+	</li>
+	<li>
+		<p>Публикация фичи:</p>
+		<p>git flow feature publish MYFEATURE</p>
+		<p>Публикует фичу на удаленном сервере.</p>
+	</li>
+	<li>
+		<p>Получение опубликованной фичи:</p>
+		<p>git flow feature pull origin MYFEATURE</p>
+		<p>Публикует фичу на удаленном сервере.</p>
+		<p>Можно отслеживать фичу в репозитории origin с помощью команды:</p>
+		<p>git flow feature track MYFEATURE</p>
+	</li>
+</ul>
+
+<p>Работа с релизами</p>
+
+<ul>
+	<li>
+		<p>Начало релиза:</p>
+		<p>git flow release start RELEASE</p>
+		<p>Cоздаёт ветку релиза, ответвляя от ветки develop.</p>
+		<p>Далее нужно опубликовать ветку релиза, чтобы другие могли делать в нее коммиты.</p>
+		<p>git flow release publish RELEASE</p>
+		<p>Отслеживать релиз можно с помощью команды:</p>
+		<p>git flow release track RELEASE</p>
+	</li>
+	<li>
+		<p>Завершение релиза:</p>
+		<p>git flow release finish RELEASE</p>
+		<p>Ветка релиза сливается в master</p>
+		<p>Релиз помечается тегом с именем, равным его имени.</p>
+		<p>Ветка релиза сливается обратно в ветку develop.</p>
+		<p>Ветка релиза удаляется.</p>
+		<p>Далее нужно отправить изменения:</p>
+		<p>git push --tags</p>
+	</li>
+	
+</ul>
+
+<p></p>
